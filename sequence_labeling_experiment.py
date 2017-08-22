@@ -219,7 +219,7 @@ def map_text_to_ids(text, word2id, start_token=None, end_token=None, unk_token=N
         elif unk_token != None:
             ids.append(word2id[unk_token])
         else:
-            raise ValueError("Token not in dictionary and no unknown token assigned: " + word)
+            raise ValueError("Token not in dictionary and no unknown token assigned: ", word)
     return ids
 
 
